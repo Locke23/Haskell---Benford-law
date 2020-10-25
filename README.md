@@ -1,0 +1,1 @@
+Haskell - Benford law
