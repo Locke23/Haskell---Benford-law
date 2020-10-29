@@ -2,14 +2,13 @@
 -- 202110
 
 import Control.Monad
-import System.IO
 import Data.Char
 import Data.List
 import qualified Data.Map as Map
 import Numeric 
 
 main = do
-  line <- readFile "test.txt"
+  line <- getContents
   do
     let frequencyTupleList = [('1', 0), ('2', 0), ('3', 0), ('4', 0), ('5', 0), ('6', 0), ('7', 0), ('8', 0), ('9', 0)]
     let totalNumber = length $ filter (/= ' ') $ sort $ lineFirstDigits line
